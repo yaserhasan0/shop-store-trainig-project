@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
+:root{
+    --mainColor: #FFC72C;
+--secondaryColor: red;
+}
+body{
+    font-family: Almarai !important;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+.top-header{
+background-color: var(--mainColor);
+
+}
+
+.left-header a{
+
+ margin-left: 30px;
+}
+
+.menu-icon{
+    border-radius: 3px !important;
+box-shadow: none !important;
+
+
+
+}
+
