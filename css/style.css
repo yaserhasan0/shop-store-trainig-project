@@ -1,53 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
-:root{
+
+:root {
     --mainColor: #FFC72C;
---secondaryColor: red;
+    --secondaryColor: red;
 }
-body{
+
+body {
     font-family: Almarai !important;
-    height: 2500px;
+    height: 3500px;
 }
-a{
+
+a {
     text-decoration: none !important;
     color: black !important;
 }
-.top-header{
-background-color: var(--mainColor);
+
+.top-header {
+    background-color: var(--mainColor);
 
 }
 
-.left-header a{
+.left-header a {
     margin-left: 30px;
     border-left: 1px solid black;
     padding-left: 15px;
     transition: all 0.3s;
 }
-.left-header a:hover{
+
+.left-header a:hover {
     color: var(--secondaryColor) !important;
 }
-.menu-icon{
+
+.menu-icon {
     border-radius: 3px !important;
     box-shadow: none !important;
 }
 
-.nav-link{
+.nav-link {
     font-weight: 600 !important;
 }
-.buttom-header{
+
+.buttom-header {
     box-shadow: 2px 2px 2px #5d5a5a42;
 }
+
 /* category */
-.categories{
+.categories {
     margin-top: 50px;
 }
-.cat img{
+
+.cat img {
     transition: all 0.3s;
 }
-.cat:hover img{
-scale: 1.1;
+
+.cat:hover img {
+    scale: 1.1;
 }
-.section-title{
-margin-bottom: 30px;
-font-family: almarai;
-font-weight: bold;
+
+.section-title {
+    margin-bottom: 30px;
+    font-family: almarai;
+    font-weight: bold;
+}
+
+/* start products */
+.products {
+    margin-top: 70px;
+
+}
+
+.product-info {
+    padding: 10px;
+
+}
+
+.product-info h3 {
+    font-family: Almarai;
+    font-weight: bold;
+    font-size: 22px;
+text-align: end;
+padding-left: 10px;
+padding-bottom: 3px;
+
+}
+
+.product-info p {
+    font-size: 14px;
+}
+
+.stars i {
+    color: var(--mainColor);
+    font-size: 20px;
+}
+.price{
+    /* text-align: center; */
+}
+.price :first-child {
+    color: var(--secondaryColor);
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.price :last-child {
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.queck-icons {
+    position: absolute;
+    background-color: rgba(215, 213, 213, 0.418);
+    right: -45px;
+    top: 15px;
+    height: 150px;
+    width: 45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+transition: 0.3s;
+}
+.queck-icons i{
+    font-size: 18px;
+}
+.product:hover .queck-icons {
+right: 0;
 }
