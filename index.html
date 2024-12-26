@@ -253,9 +253,16 @@
     <!-- start products -->
     <section class="products">
         <div class="container-fluid">
+
+            <div class="btn-group filter-button-group" role="group" aria-label="Basic example">
+                <button data-filter ="*" type="button" class="btn btn-primary">الكل</button>
+                <button data-filter =".divices" type="button" class="btn btn-primary">الاجهزة</button>
+                <button data-filter =".acc" type="button" class="btn btn-primary">الاكسسوارات</button>
+              </div>
+
             <h2 class="text-center section-title">أحدث المنتجات</h2>
-            <div class="row row-cols-2 row-cols-md-6">
-                <div class="col product mb-4">
+            <div class="row row-cols-2 row-cols-md-6 all-products">
+                <div class="col product mb-4 divices">
                     <div class="card overflow-hidden">
                         <div class="queck-icons">
                             <a href="#queck-product" data-bs-toggle="modal"><i
@@ -282,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col product mb-4">
+                <div class="col product mb-4 divices">
                     <div class="card overflow-hidden">
                         <div class="queck-icons">
                             <a href="#queck-product" data-bs-toggle="modal"><i
@@ -309,7 +316,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col product mb-4">
+                <div class="col product mb-4 divices">
                     <div class="card overflow-hidden">
                         <div class="queck-icons">
                             <a href="#queck-product" data-bs-toggle="modal"><i
@@ -336,7 +343,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col product mb-4">
+                <div class="col product mb-4 acc">
                     <div class="card overflow-hidden">
                         <div class="queck-icons">
                             <a href="#queck-product" data-bs-toggle="modal"><i
@@ -363,7 +370,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col product mb-4">
+                <div class="col product mb-4 acc">
                     <div class="card overflow-hidden">
                         <div class="queck-icons">
                             <a href="#queck-product" data-bs-toggle="modal"><i
@@ -390,7 +397,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col product mb-4">
+                <div class="col product mb-4 divices">
                     <div class="card overflow-hidden">
                         <div class="queck-icons">
                             <a href="#queck-product" data-bs-toggle="modal"><i
@@ -465,7 +472,8 @@
 
 
     <!-- end products -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </body>
