@@ -156,5 +156,42 @@ a {
 @media (max-width: 768px) {
     .add-btn button{
         font-size: 13px !important;
+        
     }
+}
+/* .btn-danger {
+    background-color: #FF4D00 !important;
+    border-color: #FF8000 !important;
+}
+
+.btn-danger:hover {
+    background-color: #E64500 !important;
+    border-color: #E64500 !important;
+} */
+
+
+.mini-card{
+    background-color: #eeeeeeb0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.mini-card img{
+    border-radius: 5px;
+}
+
+.btns-quantity-mini button{
+background-color: #ffffff;
+border: 1px solid #aba6a6;
+
+}
+.btns-quantity-mini button:hover{
+    
+    border: 1px solid #ccc;
+    
+    }
+.row-min-card{
+padding-bottom: 20px;
+border-bottom: 2px dashed red;
+
 }
