@@ -1,30 +1,50 @@
+/* استيراد الخطوط من Google Fonts - خطي Almarai و Cairo بأوزان مختلفة */
+
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
 
+
+
+
+/* تعريف المتغيرات العامة (CSS Variables) للألوان الرئيسية */
 :root {
-    --mainColor: #FFC72C;
-    --secondaryColor: red;
+    --mainColor: #FFC72C;          /* اللون الأصفر الرئيسي */
+    --secondaryColor: red;         /* اللون الأحمر الثانوي */
 }
 
+
+
+
+
+/* الإعدادات الأساسية للصفحة */
 body {
-    font-family: Almarai !important;
-    /* height: 3500px; */
+    font-family: Almarai !important;     /* تطبيق خط Almarai على كامل الصفحة */
+    height: 3500px;
 }
 
+
+
+
+/* إزالة التنسيق الافتراضي للروابط */
 a {
     text-decoration: none !important;
     color: black !important;
 }
 
+
+
+/* تنسيق الهيدر العلوي */
 .top-header {
     background-color: var(--mainColor);
 
 }
 
+
+/* تنسيق روابط القسم الأيسر من الهيدر */
 .left-header a {
     margin-left: 30px;
     border-left: 1px solid black;
     padding-left: 15px;
-    transition: all 0.3s;
+    transition: all 0.3s;    /* تأثير انتقالي عند الهوفرة */
 }
 
 .left-header a:hover {
@@ -36,15 +56,26 @@ a {
     box-shadow: none !important;
 }
 
+
+
+
+                                /* تنسيق روابط القائمة الرئيسية */
 .nav-link {
     font-weight: 600 !important;
 }
 
+
+
+/* إضافة ظل للهيدر السفلي */
 .buttom-header {
     box-shadow: 2px 2px 2px #5d5a5a42;
 }
 
-/* category */
+
+
+
+                                /* تنسيق قسم التصنيفات */
+                                /* category */
 .categories {
     margin-top: 50px;
 }
@@ -57,12 +88,15 @@ a {
     scale: 1.1;
 }
 
+
+                                /* تنسيق عناوين الأقسام */
+
 .section-title {
     margin-bottom: 30px;
     font-family: almarai;
     font-weight: bold;
 }
-
+                                /* تنسيق قسم المنتجات */
 /* start products */
 .products {
     margin-top: 70px;
@@ -96,6 +130,7 @@ a {
 .price {
     /* text-align: center; */
 }
+                                /* تنسيق أسعار المنتجات */
 
 .price :first-child {
     color: var(--secondaryColor);
@@ -109,7 +144,10 @@ a {
     font-size: 18px;
 }
 
-.queck-icons {
+               
+
+
+.queck-icons {                 /* تنسيق أيقونات الوصول السريع */
     position: absolute;
     background-color: rgba(215, 213, 213, 0.418);
     right: -45px;
@@ -159,7 +197,7 @@ a {
         
     }
 }
-/* .btn-danger {
+.btn-danger {
     background-color: #FF4D00 !important;
     border-color: #FF8000 !important;
 }
@@ -167,10 +205,10 @@ a {
 .btn-danger:hover {
     background-color: #E64500 !important;
     border-color: #E64500 !important;
-} */
+}
 
 
-.mini-card{
+.mini-card{              /* تنسيق البطاقات المصغرة في السلة */
     background-color: #eeeeeeb0;
     padding: 10px;
     margin: 5px;
@@ -180,7 +218,7 @@ a {
     border-radius: 5px;
 }
 
-.btns-quantity-mini button{
+.btns-quantity-mini button{             /* تنسيق أزرار الكمية في البطاقات المصغرة */
 background-color: #ffffff;
 border: 1px solid #aba6a6;
 
@@ -190,7 +228,7 @@ border: 1px solid #aba6a6;
     border: 1px solid #ccc;
     
     }
-.row-min-card{
+.row-min-card{             /* تنسيق القسم السفلي من سلة المشتريات */
 padding-bottom: 20px;
 border-bottom: 2px dashed red;
 
@@ -201,3 +239,97 @@ border-bottom: 2px dashed red;
     padding: 10px;
     border-radius: 5px;
 } */
+
+
+
+
+.product img {
+    width: 100%; /* عرض الصورة */
+    aspect-ratio: 1 / 1; /* نسبة العرض إلى الارتفاع (مربع) */
+    object-fit: cover; /* للحفاظ على نسبة الصورة */
+}
+.product-info h3, .product-info p {
+    white-space: nowrap; /* لمنع النص من الانتقال لسطر جديد */
+    overflow: hidden; /* لإخفاء النص الزائد */
+    text-overflow: ellipsis; /* لإضافة "..." للنص الزائد */
+}
+
+
+
+
+/*  إضافة رسوم متحركة (Animations):
+تحميل متدرج للبطاقات:
+أضف تأثيرات تحميل متدرجة لجعل الصفحة أكثر تفاعلية. */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.product {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+.product:nth-child(1) { animation-delay: 0.1s; }
+.product:nth-child(2) { animation-delay: 0.2s; }
+.product:nth-child(3) { animation-delay: 0.3s; }
+.product:nth-child(4) { animation-delay: 0.4s; }
+.product:nth-child(5) { animation-delay: 0.5s; }
+.product:nth-child(6) { animation-delay: 0.6s; }
+
+
+
+
+/*  تحسين الأسعار:
+تأثير على السعر المخفض:
+أضف خطًا على السعر القديم لإظهار الخصم بشكل أوضح. */
+
+.price span:last-child {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+}
+
+/* .container-fluid {
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    padding: 20px;
+    border-radius: 10px;
+} */
+
+
+/* خطوط واضحة وعصرية:
+استخدم خطوطًا عصرية مثل Poppins أو Roboto لجعل النص أكثر وضوحًا. */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.product-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+
+
+/* تحسين الخطوط:
+خطوط واضحة وعصرية:
+استخدم خطوطًا عصرية مثل Poppins أو Roboto لجعل النص أكثر وضوحًا. */
+.product-info p {       
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ظلال وحدود ناعمة:
+أضف ظلالًا ناعمة للبطاقات لجعلها تبدو وكأنها تطفو فوق الصفحة. */
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
