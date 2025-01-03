@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="css/all.css">
     <title>shop store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!--  /////////////////بداية الهيدر ///////////////////////-->
 
-
+    <!-- قسم الهيدر -->
+    <!-- end header-->
     <header>
         <div class="top-header  d-flex align-items-center py-2">
 
@@ -106,6 +107,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
                             </li>
@@ -139,14 +141,13 @@
 
 
     </header>
-
-    <!-- نهاية الهيدر -->
-
+    <!-- end header-->
 
 
 
 
 
+    <!-- قسم السلايدر الخاص برأس الصفحة -->
     <!-- start slider -->
     <div class="slider mt-2">
         <div class="container-fluid">
@@ -199,11 +200,12 @@
             </div>
         </div>
     </div>
-
     <!-- end slider -->
 
-    <!-- start categories -->
 
+
+    <!-- قسم التصنيفات -->
+    <!-- start categories -->
     <section class="categories">
 
         <h2 class="text-center section-title">كل التصنيفات</h2>
@@ -259,21 +261,31 @@
                 </div>
             </div>
         </div>
-
     </section>
-
     <!-- end categories -->
 
 
-
+    <!-- قسم الفلتر -->
     <!-- start products -->
     <section class="products">
         <div class="container-fluid">
-
-            <div class="btn-group filter-button-group" role="group" aria-label="Basic example">
+            <!-- 
+            <div class="btn-group filter-button-group mt-3 mb-sm-4 mt-md-0" role="group" aria-label="Basic example">
                 <button data-filter="*" type="button" class="btn btn-primary">الكل</button>
                 <button data-filter=".divices" type="button" class="btn btn-primary">الاجهزة</button>
                 <button data-filter=".acc" type="button" class="btn btn-primary">الاكسسوارات</button>
+            </div> -->
+
+            <div class="btn-group filter-button-group mb-4 mt-sm-4 mt-md-0" role="group" aria-label="Basic example">
+                <button data-filter="*" type="button" class="btn btn-silver">
+                    <i class="fa-solid fa-list"></i> الكل
+                </button>
+                <button data-filter=".divices" type="button" class="btn btn-silver">
+                    <i class="fa-solid fa-mobile-screen"></i> الاجهزة
+                </button>
+                <button data-filter=".acc" type="button" class="btn btn-silver">
+                    <i class="fa-solid fa-headphones"></i> الاكسسوارات
+                </button>
             </div>
 
             <h2 class="text-center section-title">أحدث المنتجات</h2>
@@ -605,10 +617,7 @@
             </div>
         </div>
     </section>
-
-
     <!-- model -->
-
     <div class="modal fade" id="queck-product" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
         tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -698,30 +707,13 @@
             </div>
         </div>
     </div>
-
     <!-- model -->
-
-
     <!-- end products -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- قسم السلايدر الخاص بالمنتجات -->
     <!-- start new product section -->
-
     <section class="new-product">
         <div class="container-fluid"></div>
         <h2 class="text-center section-title">أحدث المنتجات</h2>
@@ -937,11 +929,10 @@
 
 
     </section>
-
     <!-- end new product section -->
 
 
-
+    <!-- قسم التابات والتنقل -->
     <!-- start special products -->
     <div class="container-fluid pt-5">
         <ul class="nav nav-tabs">
@@ -957,9 +948,10 @@
         </ul>
 
 
+        <!-- الكلاس الذي اسمه special-product
+ قمت باضافته لكي يعمل لي تاثير تنقل سلس بين الاقسام -->
 
-
-        <div class="tab-content">
+        <div class="tab-content special-product">
             <!-- New Products Tab -->
             <div class="tab-pane fade show active mt-5" id="new">
                 <div class="row row-cols-2 row-cols-md-6">
@@ -1502,9 +1494,10 @@
 
 
 
-    <!-- cart -->
 
 
+
+    <!-- start cart -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
@@ -1564,17 +1557,10 @@
 
         </div>
     </div>
-
     <!-- end cart -->
 
 
-
-
-
-    <!-- login -->
-
-
-
+    <!-- start login -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
@@ -1617,9 +1603,6 @@
 
         </div>
     </div>
-
-
-
     <!-- end login -->
 
 

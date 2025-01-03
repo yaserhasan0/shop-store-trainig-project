@@ -7,8 +7,10 @@
 
 /* تعريف المتغيرات العامة (CSS Variables) للألوان الرئيسية */
 :root {
-    --mainColor: #FFC72C;          /* اللون الأصفر الرئيسي */
-    --secondaryColor: red;         /* اللون الأحمر الثانوي */
+    --mainColor: #FFC72C;
+    /* اللون الأصفر الرئيسي */
+    --secondaryColor: red;
+    /* اللون الأحمر الثانوي */
 }
 
 
@@ -17,7 +19,8 @@
 
 /* الإعدادات الأساسية للصفحة */
 body {
-    font-family: Almarai !important;     /* تطبيق خط Almarai على كامل الصفحة */
+    font-family: Almarai !important;
+    /* تطبيق خط Almarai على كامل الصفحة */
     height: 3500px;
 }
 
@@ -44,7 +47,8 @@ a {
     margin-left: 30px;
     border-left: 1px solid black;
     padding-left: 15px;
-    transition: all 0.3s;    /* تأثير انتقالي عند الهوفرة */
+    transition: all 0.3s;
+    /* تأثير انتقالي عند الهوفرة */
 }
 
 .left-header a:hover {
@@ -59,7 +63,7 @@ a {
 
 
 
-                                /* تنسيق روابط القائمة الرئيسية */
+/* تنسيق روابط القائمة الرئيسية */
 .nav-link {
     font-weight: 600 !important;
 }
@@ -74,8 +78,8 @@ a {
 
 
 
-                                /* تنسيق قسم التصنيفات */
-                                /* category */
+/* تنسيق قسم التصنيفات */
+/* category */
 .categories {
     margin-top: 50px;
 }
@@ -89,14 +93,15 @@ a {
 }
 
 
-                                /* تنسيق عناوين الأقسام */
+/* تنسيق عناوين الأقسام */
 
 .section-title {
     margin-bottom: 30px;
     font-family: almarai;
     font-weight: bold;
 }
-                                /* تنسيق قسم المنتجات */
+
+/* تنسيق قسم المنتجات */
 /* start products */
 .products {
     margin-top: 70px;
@@ -127,10 +132,12 @@ a {
     font-size: 20px;
 }
 
-.price {
-    /* text-align: center; */
+/* .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-                                /* تنسيق أسعار المنتجات */
+                              */
 
 .price :first-child {
     color: var(--secondaryColor);
@@ -142,12 +149,14 @@ a {
 .price :last-child {
     text-decoration: line-through;
     font-size: 18px;
+
 }
 
-               
 
 
-.queck-icons {                 /* تنسيق أيقونات الوصول السريع */
+
+.queck-icons {
+    /* تنسيق أيقونات الوصول السريع */
     position: absolute;
     background-color: rgba(215, 213, 213, 0.418);
     right: -45px;
@@ -192,11 +201,12 @@ a {
 
 
 @media (max-width: 768px) {
-    .add-btn button{
+    .add-btn button {
         font-size: 13px !important;
-        
+
     }
 }
+
 .btn-danger {
     background-color: #FF4D00 !important;
     border-color: #FF8000 !important;
@@ -208,72 +218,61 @@ a {
 }
 
 
-.mini-card{              /* تنسيق البطاقات المصغرة في السلة */
+.mini-card {
+    /* تنسيق البطاقات المصغرة في السلة */
     background-color: #eeeeeeb0;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
 }
-.mini-card img{
+
+.mini-card img {
     border-radius: 5px;
 }
 
-.btns-quantity-mini button{             /* تنسيق أزرار الكمية في البطاقات المصغرة */
-background-color: #ffffff;
-border: 1px solid #aba6a6;
+.btns-quantity-mini button {
+    /* تنسيق أزرار الكمية في البطاقات المصغرة */
+    background-color: #ffffff;
+    border: 1px solid #aba6a6;
 
 }
-.btns-quantity-mini button:hover{
-    
+
+.btns-quantity-mini button:hover {
+
     border: 1px solid #ccc;
-    
-    }
-.row-min-card{             /* تنسيق القسم السفلي من سلة المشتريات */
-padding-bottom: 20px;
-border-bottom: 2px dashed red;
 
 }
 
-/* .mini-login{
-    border: 1px dashed #ccc;
-    padding: 10px;
-    border-radius: 5px;
-} */
+.row-min-card {
+    /* تنسيق القسم السفلي من سلة المشتريات */
+    padding-bottom: 20px;
+    border-bottom: 2px dashed red;
+
+}
 
 
 
 
 .product img {
-    width: 100%; /* عرض الصورة */
-    aspect-ratio: 1 / 1; /* نسبة العرض إلى الارتفاع (مربع) */
-    object-fit: cover; /* للحفاظ على نسبة الصورة */
+    width: 100%;
+    /* عرض الصورة */
+    aspect-ratio: 1 / 1;
+    /* نسبة العرض إلى الارتفاع (مربع) */
+    object-fit: cover;
+    /* للحفاظ على نسبة الصورة */
 }
-.product-info h3, .product-info p {
-    white-space: nowrap; /* لمنع النص من الانتقال لسطر جديد */
-    overflow: hidden; /* لإخفاء النص الزائد */
-    text-overflow: ellipsis; /* لإضافة "..." للنص الزائد */
+
+.product-info h3,
+.product-info p {
+    white-space: nowrap;
+    /* لمنع النص من الانتقال لسطر جديد */
+    overflow: hidden;
+    /* لإخفاء النص الزائد */
+    text-overflow: ellipsis;
+    /* لإضافة "..." للنص الزائد */
 }
 
 
-
-
-/*  إضافة رسوم متحركة (Animations):
-تحميل متدرج للبطاقات:
-أضف تأثيرات تحميل متدرجة لجعل الصفحة أكثر تفاعلية. */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.product {
-    animation: fadeIn 0.5s ease forwards;
-    opacity: 0;
-}
-.product:nth-child(1) { animation-delay: 0.1s; }
-.product:nth-child(2) { animation-delay: 0.2s; }
-.product:nth-child(3) { animation-delay: 0.3s; }
-.product:nth-child(4) { animation-delay: 0.4s; }
-.product:nth-child(5) { animation-delay: 0.5s; }
-.product:nth-child(6) { animation-delay: 0.6s; }
 
 
 
@@ -288,11 +287,6 @@ border-bottom: 2px dashed red;
     margin-left: 10px;
 }
 
-/* .container-fluid {
-    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
-    padding: 20px;
-    border-radius: 10px;
-} */
 
 
 /* خطوط واضحة وعصرية:
@@ -301,6 +295,7 @@ border-bottom: 2px dashed red;
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 .product-info h3 {
     font-size: 1.2rem;
     font-weight: 600;
@@ -313,10 +308,14 @@ body {
 /* تحسين الخطوط:
 خطوط واضحة وعصرية:
 استخدم خطوطًا عصرية مثل Poppins أو Roboto لجعل النص أكثر وضوحًا. */
-.product-info p {       
+.product-info p {
     font-size: 0.9rem;
     color: #666;
 }
+
+
+
+
 
 /* ظلال وحدود ناعمة:
 أضف ظلالًا ناعمة للبطاقات لجعلها تبدو وكأنها تطفو فوق الصفحة. */
@@ -326,10 +325,90 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* ------------------------------------------------------------------------------------------------------ */
 
 
+
+
+/* الكلاس الذي اسمه special-product */
+/* قمت باضافته لكي يعمل لي تاثير تنقل سلس بين الاقسام  */
+.special-product .product {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.special-product .product:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.special-product .product:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.special-product .product:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.special-product .product:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.special-product .product:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.special-product .product:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* هذا الجزء المسؤول عن تلوين الازرار بتدرج الازرق بقسم الفلتر */
+
+.btn-silver {
+    background: linear-gradient(45deg, #6a11cb, #2575fc, #00d2ff);
+    /* تدرج لوني */
+    border: none;
+    /* إزالة الإطار */
+    color: white;
+    /* لون النص أبيض */
+    padding: 10px 20px;
+    /* هامش داخلي */
+    font-size: 16px;
+    /* حجم النص */
+    border-radius: 25px;
+    /* زوايا مدورة */
+    transition: background 0.5s ease, transform 0.2s ease;
+    /* تأثيرات التحويم */
+}
+
+.btn-silver:hover {
+    background: linear-gradient(45deg, #00d2ff, #2575fc, #6a11cb);
+    /* تغيير التدرج عند التحويم */
+    transform: translateY(-3px);
+    /* تأثير رفع بسيط */
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
