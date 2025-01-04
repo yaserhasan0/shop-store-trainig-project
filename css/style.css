@@ -7,10 +7,8 @@
 
 /* تعريف المتغيرات العامة (CSS Variables) للألوان الرئيسية */
 :root {
-    --mainColor: #FFC72C;
-    /* اللون الأصفر الرئيسي */
-    --secondaryColor: red;
-    /* اللون الأحمر الثانوي */
+    --mainColor: #FFC72C;          /* اللون الأصفر الرئيسي */
+    --secondaryColor: red;         /* اللون الأحمر الثانوي */
 }
 
 
@@ -19,9 +17,8 @@
 
 /* الإعدادات الأساسية للصفحة */
 body {
-    font-family: Almarai !important;
-    /* تطبيق خط Almarai على كامل الصفحة */
-    height: 3500px;
+    font-family: Almarai !important;     /* تطبيق خط Almarai على كامل الصفحة */
+    height: 5500px;
 }
 
 
@@ -47,8 +44,7 @@ a {
     margin-left: 30px;
     border-left: 1px solid black;
     padding-left: 15px;
-    transition: all 0.3s;
-    /* تأثير انتقالي عند الهوفرة */
+    transition: all 0.3s;    /* تأثير انتقالي عند الهوفرة */
 }
 
 .left-header a:hover {
@@ -63,7 +59,7 @@ a {
 
 
 
-/* تنسيق روابط القائمة الرئيسية */
+                                /* تنسيق روابط القائمة الرئيسية */
 .nav-link {
     font-weight: 600 !important;
 }
@@ -78,8 +74,8 @@ a {
 
 
 
-/* تنسيق قسم التصنيفات */
-/* category */
+                                /* تنسيق قسم التصنيفات */
+                                /* category */
 .categories {
     margin-top: 50px;
 }
@@ -93,15 +89,14 @@ a {
 }
 
 
-/* تنسيق عناوين الأقسام */
+                                /* تنسيق عناوين الأقسام */
 
 .section-title {
     margin-bottom: 30px;
     font-family: almarai;
     font-weight: bold;
 }
-
-/* تنسيق قسم المنتجات */
+                                /* تنسيق قسم المنتجات */
 /* start products */
 .products {
     margin-top: 70px;
@@ -132,12 +127,10 @@ a {
     font-size: 20px;
 }
 
-/* .price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.price {
+    /* text-align: center; */
 }
-                              */
+                                /* تنسيق أسعار المنتجات */
 
 .price :first-child {
     color: var(--secondaryColor);
@@ -149,14 +142,12 @@ a {
 .price :last-child {
     text-decoration: line-through;
     font-size: 18px;
-
 }
 
+               
 
 
-
-.queck-icons {
-    /* تنسيق أيقونات الوصول السريع */
+.queck-icons {                 /* تنسيق أيقونات الوصول السريع */
     position: absolute;
     background-color: rgba(215, 213, 213, 0.418);
     right: -45px;
@@ -201,12 +192,11 @@ a {
 
 
 @media (max-width: 768px) {
-    .add-btn button {
+    .add-btn button{
         font-size: 13px !important;
-
+        
     }
 }
-
 .btn-danger {
     background-color: #FF4D00 !important;
     border-color: #FF8000 !important;
@@ -218,35 +208,29 @@ a {
 }
 
 
-.mini-card {
-    /* تنسيق البطاقات المصغرة في السلة */
+.mini-card{              /* تنسيق البطاقات المصغرة في السلة */
     background-color: #eeeeeeb0;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
 }
-
-.mini-card img {
+.mini-card img{
     border-radius: 5px;
 }
 
-.btns-quantity-mini button {
-    /* تنسيق أزرار الكمية في البطاقات المصغرة */
-    background-color: #ffffff;
-    border: 1px solid #aba6a6;
+.btns-quantity-mini button{             /* تنسيق أزرار الكمية في البطاقات المصغرة */
+background-color: #ffffff;
+border: 1px solid #aba6a6;
 
 }
-
-.btns-quantity-mini button:hover {
-
+.btns-quantity-mini button:hover{
+    
     border: 1px solid #ccc;
-
-}
-
-.row-min-card {
-    /* تنسيق القسم السفلي من سلة المشتريات */
-    padding-bottom: 20px;
-    border-bottom: 2px dashed red;
+    
+    }
+.row-min-card{             /* تنسيق القسم السفلي من سلة المشتريات */
+padding-bottom: 20px;
+border-bottom: 2px dashed red;
 
 }
 
@@ -254,26 +238,15 @@ a {
 
 
 .product img {
-    width: 100%;
-    /* عرض الصورة */
-    aspect-ratio: 1 / 1;
-    /* نسبة العرض إلى الارتفاع (مربع) */
-    object-fit: cover;
-    /* للحفاظ على نسبة الصورة */
+    width: 100%; /* عرض الصورة */
+    aspect-ratio: 1 / 1; /* نسبة العرض إلى الارتفاع (مربع) */
+    object-fit: cover; /* للحفاظ على نسبة الصورة */
 }
-
-.product-info h3,
-.product-info p {
-    white-space: nowrap;
-    /* لمنع النص من الانتقال لسطر جديد */
-    overflow: hidden;
-    /* لإخفاء النص الزائد */
-    text-overflow: ellipsis;
-    /* لإضافة "..." للنص الزائد */
+.product-info h3, .product-info p {
+    white-space: nowrap; /* لمنع النص من الانتقال لسطر جديد */
+    overflow: hidden; /* لإخفاء النص الزائد */
+    text-overflow: ellipsis; /* لإضافة "..." للنص الزائد */
 }
-
-
-
 
 
 
@@ -287,6 +260,11 @@ a {
     margin-left: 10px;
 }
 
+/* .container-fluid {
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    padding: 20px;
+    border-radius: 10px;
+} */
 
 
 /* خطوط واضحة وعصرية:
@@ -295,7 +273,6 @@ a {
 body {
     font-family: 'Poppins', sans-serif;
 }
-
 .product-info h3 {
     font-size: 1.2rem;
     font-weight: 600;
@@ -308,7 +285,7 @@ body {
 /* تحسين الخطوط:
 خطوط واضحة وعصرية:
 استخدم خطوطًا عصرية مثل Poppins أو Roboto لجعل النص أكثر وضوحًا. */
-.product-info p {
+.product-info p {       
     font-size: 0.9rem;
     color: #666;
 }
@@ -325,12 +302,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 /* ------------------------------------------------------------------------------------------------------ */
 
 
@@ -342,43 +317,17 @@ body {
     animation: fadeIn 0.5s ease forwards;
     opacity: 0;
 }
-
-.special-product .product:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.special-product .product:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.special-product .product:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.special-product .product:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.special-product .product:nth-child(5) {
-    animation-delay: 0.5s;
-}
-
-.special-product .product:nth-child(6) {
-    animation-delay: 0.6s;
-}
+.special-product .product:nth-child(1) { animation-delay: 0.1s; }
+.special-product .product:nth-child(2) { animation-delay: 0.2s; }
+.special-product .product:nth-child(3) { animation-delay: 0.3s; }
+.special-product .product:nth-child(4) { animation-delay: 0.4s; }
+.special-product .product:nth-child(5) { animation-delay: 0.5s; }
+.special-product .product:nth-child(6) { animation-delay: 0.6s; }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
-
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
@@ -388,27 +337,176 @@ body {
 /* هذا الجزء المسؤول عن تلوين الازرار بتدرج الازرق بقسم الفلتر */
 
 .btn-silver {
-    background: linear-gradient(45deg, #6a11cb, #2575fc, #00d2ff);
-    /* تدرج لوني */
-    border: none;
-    /* إزالة الإطار */
-    color: white;
-    /* لون النص أبيض */
-    padding: 10px 20px;
-    /* هامش داخلي */
-    font-size: 16px;
-    /* حجم النص */
-    border-radius: 25px;
-    /* زوايا مدورة */
-    transition: background 0.5s ease, transform 0.2s ease;
-    /* تأثيرات التحويم */
+    background: linear-gradient(45deg, #6a11cb, #2575fc, #00d2ff); /* تدرج لوني */
+    border: none; /* إزالة الإطار */
+    color: white; /* لون النص أبيض */
+    padding: 10px 20px; /* هامش داخلي */
+    font-size: 16px; /* حجم النص */
+    border-radius: 25px; /* زوايا مدورة */
+    transition: background 0.5s ease, transform 0.2s ease; /* تأثيرات التحويم */
+}
+.btn-silver:hover {
+    background: linear-gradient(45deg, #00d2ff, #2575fc, #6a11cb); /* تغيير التدرج عند التحويم */
+    transform: translateY(-3px); /* تأثير رفع بسيط */
 }
 
-.btn-silver:hover {
-    background: linear-gradient(45deg, #00d2ff, #2575fc, #6a11cb);
-    /* تغيير التدرج عند التحويم */
-    transform: translateY(-3px);
-    /* تأثير رفع بسيط */
-}
+/* end special products  */
+
+
+
+
+
 
 /* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* start  weekend proooduuccts */
+/* 
+.week-product{
+
+padding-top: 50px;
+
+}
+
+.product-sm{
+    padding: 5px;
+    background-color: #eeeeee6e;
+    border-radius: 5px;
+    border: 1px dashed #9d9b9b62;
+    overflow: hidden !important;
+}
+
+.product-sm:hover img{
+rotate: 10deg;
+transition: all 0.3s;
+}
+
+
+.product-sm img{
+    border-radius: 5px;
+
+}
+.product-sm .product-info :first-child {
+font-weight: bold;
+font-size: 17px;
+color: black;
+}
+
+.product-sm .product-info :last-child{
+
+    color: red;
+    font-weight: bold;
+}
+
+.mini-title{
+font-size: 20px;
+font-weight: bold;
+margin-top: 35px;
+margin-bottom: 25px;
+} */
+
+
+
+
+
+/* end start  weekend proooduuccts */
+
+/* start weekend products */
+.week-product {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.product-sm {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    overflow: hidden !important;
+    transition: all 0.3s ease;
+}
+
+.product-sm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-color: #007bff;
+}
+
+.product-sm:hover img {
+    transform: rotate(10deg) scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.product-sm img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-sm .product-info :first-child {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-sm .product-info :last-child {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mini-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.mini-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .product-sm {
+        padding: 8px;
+    }
+
+    .mini-title {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .product-sm img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .invisible {
+        display: none !important; /* تحويل invisible إلى d-none */
+    }
+}
+/* end weekend products */
+
+
+
+
