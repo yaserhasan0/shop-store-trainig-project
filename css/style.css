@@ -260,11 +260,6 @@ border-bottom: 2px dashed red;
     margin-left: 10px;
 }
 
-/* .container-fluid {
-    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
-    padding: 20px;
-    border-radius: 10px;
-} */
 
 
 /* خطوط واضحة وعصرية:
@@ -349,6 +344,14 @@ body {
     background: linear-gradient(45deg, #00d2ff, #2575fc, #6a11cb); /* تغيير التدرج عند التحويم */
     transform: translateY(-3px); /* تأثير رفع بسيط */
 }
+@media (max-width: 768px) {
+    .btn-silver {
+        padding: 8px 16px; /* تصغير الهوامش الداخلية */
+        font-size: 14px; /* تصغير حجم الخط */
+        border-radius: 20px; /* تصغير زوايا التدوير */
+    }
+}
+
 
 /* end special products  */
 
@@ -364,56 +367,8 @@ body {
 
 
 
-/* start  weekend proooduuccts */
-/* 
-.week-product{
-
-padding-top: 50px;
-
-}
-
-.product-sm{
-    padding: 5px;
-    background-color: #eeeeee6e;
-    border-radius: 5px;
-    border: 1px dashed #9d9b9b62;
-    overflow: hidden !important;
-}
-
-.product-sm:hover img{
-rotate: 10deg;
-transition: all 0.3s;
-}
 
 
-.product-sm img{
-    border-radius: 5px;
-
-}
-.product-sm .product-info :first-child {
-font-weight: bold;
-font-size: 17px;
-color: black;
-}
-
-.product-sm .product-info :last-child{
-
-    color: red;
-    font-weight: bold;
-}
-
-.mini-title{
-font-size: 20px;
-font-weight: bold;
-margin-top: 35px;
-margin-bottom: 25px;
-} */
-
-
-
-
-
-/* end start  weekend proooduuccts */
 
 /* start weekend products */
 .week-product {
@@ -506,6 +461,56 @@ margin-bottom: 25px;
     }
 }
 /* end weekend products */
+
+
+
+
+/* start ads section style */
+.ads{
+    background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.ad{
+    border-radius: 10px !important;
+    cursor: pointer;
+}
+.ad img{
+    transition: 0.3s;
+}
+.ad:hover img{
+    scale: 1.1;
+}
+.ad .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.57);
+    z-index: 100 !important;
+}
+
+.ad-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 105 !important;
+}
+.ad.ad-info h3 {
+    color: white;
+    font-size: 30;
+    font-weight: bold;
+   
+}
+
+.ad-info p {
+    color: white;
+}
+
+/* end ads section style */
+
 
 
 
