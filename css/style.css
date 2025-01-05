@@ -18,7 +18,7 @@
 /* الإعدادات الأساسية للصفحة */
 body {
     font-family: Almarai !important;     /* تطبيق خط Almarai على كامل الصفحة */
-    height: 5500px;
+ 
 }
 
 
@@ -562,4 +562,313 @@ body {
 
 
 
+/* start footer */
 
+/* footer{
+    background-color: #333;
+    padding-top: 50px;
+    margin-top: 100px;
+
+}
+.dis{
+    color: rgb(226, 225, 225);
+}
+footer h3{
+    color: rgb(226, 225, 225);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer a{
+    color: rgb(169, 165, 165) !important;
+}
+
+.f4 p{
+
+color: rgb(226, 225, 225);
+
+}
+
+
+footer .row:first-child{
+border-bottom: 1px dashed #eeeeee9c;
+}
+
+
+.footer-logo{
+ 
+    width: 400px;
+
+} */
+
+/* end footer */
+
+
+
+
+/* start footer */
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../images/1.png');
+    background-size: 200% 200%;
+    background-position: center;
+    padding-top: 50px;
+    margin-top: 100px;
+    animation: wave 15s ease infinite;
+    border-top: 2px solid var(--secondaryColor);
+}
+
+@keyframes wave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Logo and Description Section */
+.f1 {
+    margin-bottom: 30px;
+}
+
+.f1 img {
+    margin-bottom: 20px;
+}
+
+.f1 .dis {
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.f1 .navbar-nav li {
+    margin-bottom: 15px;
+    padding-right: 25px;
+    position: relative;
+}
+
+.f1 .navbar-nav li i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*  تفعيل الحركة على معلومات الاتصال */
+.f1 .navbar-nav li {
+    margin-bottom: 15px;
+    padding-right: 25px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+
+/* Basic Text Styles */
+.dis {
+    color: #ffffff;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+footer h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    background: #0099ff;
+}
+
+footer a {
+    color: #e0e0e0 !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0099ff !important;
+}
+
+/* Navigation Lists */
+footer .navbar-nav li {
+    margin-bottom: 12px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+footer .navbar-nav a::before {
+    content: "→";
+    opacity: 0;
+    margin-left: 8px;
+    transition: all 0.3s ease;
+}
+
+footer .navbar-nav a:hover::before {
+    opacity: 1;
+    margin-left: 12px;
+}
+
+/* Newsletter Form */
+.f4 {
+    margin-bottom: 30px;
+}
+
+.f4 p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: rgb(226, 225, 225);
+}
+
+.newsletter-form input {
+    padding: 15px;
+    padding-right: 45px;
+    background: rgba(190, 187, 187, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.newsletter-form .btn {
+    padding: 12px 25px;
+    background: #0099ff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* تنسيقات الزر الجديدة */
+.footer-button {
+    background: linear-gradient(45deg, #FF4D00, #FF8000);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.footer-button:hover {
+    background: linear-gradient(45deg, #E64500, #FF4D00);
+    transform: scale(1.05);
+}
+
+
+
+.f1 .navbar-nav li:hover {
+    transform: translateX(-5px);
+}
+
+
+/* Footer Bottom */
+footer .row:first-child {
+    border-bottom: 1px dashed rgba(238, 238, 238, 0.6);
+    padding-bottom: 10px;
+    margin-bottom: -18px;
+}
+footer .row:last-child img {
+   width: 500px;
+   margin-top: 50px;
+   
+}
+footer .row:last-child p{
+font-size: 14px;
+}
+.footer-logo {
+    width: 100%;
+    max-width: 450px;
+    /* margin-bottom: 10px; */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .f1, .f2, .f3, .f4 {
+        margin-bottom: 40px;
+    }
+    
+    footer .row:first-child {
+        padding-bottom: 20px;
+    }
+    
+    .footer-logo {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 0;
+    }
+    
+    .f1 img {
+        max-width: 220px;
+    }
+    
+    footer h3 {
+        margin-top: 20px;
+    }
+    
+    .footer-logo {
+        max-width: 280px;
+    }
+    
+    footer .container {
+        padding: 0 20px;
+    }
+    
+    .f1, .f2, .f3, .f4 {
+        padding: 0 15px;
+    }
+    footer .row:first-child {
+        margin-bottom: 50px;  /* زيادة المسافة بين القسم العلوي والخط */
+        padding-bottom: 50px; /* زيادة المسافة تحت الخط */
+    }
+    footer .row:last-child img{
+        width: 75%;
+        margin-top: 0px;
+        margin: auto; /* توسيط الصورة مع إضافة هامش */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .row:last-child p{
+        text-align: center;
+    }
+    
+    footer .row:last-child p {
+        margin-top: 20px;
+    }
+    .mob{
+        margin-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .f1 img {
+        max-width: 180px;
+    }
+    
+    .footer-logo {
+        max-width: 200px;
+    }
+    
+    footer h3 {
+        font-size: 18px;
+    }
+}
+/* end footer */
