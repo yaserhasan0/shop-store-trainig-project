@@ -465,28 +465,48 @@ body {
 
 
 
+
+
 /* start ads section style */
-.ads{
-    background-color: #eee;
+
+.ads {
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.ad{
+
+.ad {
     border-radius: 10px !important;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
 }
-.ad img{
-    transition: 0.3s;
+
+.ad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.ad:hover img{
-    scale: 1.1;
+
+.ad img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
 }
+
+.ad:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
 .ad .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.57);
-    z-index: 100 !important;
+    z-index: 100;
 }
 
 .ad-info {
@@ -496,18 +516,46 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    z-index: 105 !important;
+    z-index: 105;
+    animation: fadeIn 0.5s ease-in-out;
+  
 }
-.ad.ad-info h3 {
-    color: white;
-    font-size: 30;
+
+
+.ad-info h3 {
+    font-family: 'Almarai', sans-serif;
+    font-size: 24px;
     font-weight: bold;
-   
+    margin-bottom: 10px;
 }
 
 .ad-info p {
-    color: white;
+    font-family: 'Almarai', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
+
+.ad-info button {
+    background: linear-gradient(45deg, #FF4D00, #FF8000);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.ad-info button:hover {
+    background: linear-gradient(45deg, #E64500, #FF4D00);
+    transform: scale(1.05);
+}
+
 
 /* end ads section style */
 
