@@ -36,6 +36,7 @@ a {
 .top-header {
     background-color: var(--mainColor);
 
+
 }
 
 
@@ -147,7 +148,7 @@ a {
                
 
 
-.queck-icons {                 /* تنسيق أيقونات الوصول السريع */
+.quick-icons {                 /* تنسيق أيقونات الوصول السريع */
     position: absolute;
     background-color: rgba(215, 213, 213, 0.418);
     right: -45px;
@@ -163,11 +164,11 @@ a {
     transition: 0.3s;
 }
 
-.queck-icons i {
+.quick-icons i {
     font-size: 18px;
 }
 
-.product:hover .queck-icons {
+.product:hover .quick-icons {
     right: 0;
 }
 
@@ -872,3 +873,19 @@ font-size: 14px;
     }
 }
 /* end footer */
+
+
+.carousel-imges{
+position: absolute !important;
+display: flex !important;
+flex-direction: column !important;
+bottom: 80px;
+right: -150px;
+gap: 5px;
+}
+
+.img-slider{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 15px;
+}
