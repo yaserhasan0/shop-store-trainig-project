@@ -873,19 +873,184 @@ font-size: 14px;
     }
 }
 /* end footer */
-
-
-.carousel-imges{
-position: absolute !important;
-display: flex !important;
-flex-direction: column !important;
-bottom: 80px;
-right: -150px;
-gap: 5px;
+/* تنسيقات عامة للكاروسيل والمحتوى السابق */
+.carousel-imges {
+    position: absolute !important;
+    display: flex !important;
+    flex-direction: column !important;
+    bottom: 10px;
+    right: -170px;
+    gap: 5px;
 }
 
-.img-slider{
+.img-slider {
     width: 100px !important;
     height: 100px !important;
     border-radius: 15px;
+}
+
+/* تنسيقات السعر */
+.price {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.price span:first-child {
+    color: #e74c3c;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+
+.price span:last-child {
+    color: #95a5a6;
+    font-size: 22px;
+    text-decoration: line-through;
+    position: relative;
+}
+
+/* إضافة علامة الدولار بشكل أنيق */
+.price span:first-child::before {
+    font-size: 16px;
+    position: relative;
+    top: -8px;
+    margin-right: 2px;
+}
+
+.price span:last-child::before {
+    content: "$";
+    font-size: 14px;
+    position: relative;
+    top: -5px;
+    margin-right: 2px;
+}
+
+/* تنسيقات عامة أخرى */
+.product-description {
+    font-size: 17px;
+    line-height: 50px;
+    font-family: cairo;
+    word-spacing: 2px;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #2ecc55, #2ecc71);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+   
+}
+
+.btn-success:hover {
+    background: linear-gradient(45deg, #27bd48, #27ae3b);
+    transform: scale(1.01);
+}
+
+
+
+
+
+
+/* تنسيقات لشاشات الموبايل */
+@media (max-width: 768px) {
+    .price {
+        margin: 20px 0;
+        justify-content: center;
+        background: linear-gradient(to right, #f8f9fa, #ffffff);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .price span:first-child {
+        font-size: 32px;
+    }
+
+    .price span:last-child {
+        font-size: 24px;
+    }
+
+    /* باقي تنسيقات الموبايل السابقة */
+    .carousel-imges {
+        position: static !important;
+        flex-direction: row !important;
+        justify-content: center;
+        margin-top: 20px;
+        order: 2;
+    }
+
+    .img-slider {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .product-img-2 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .row.justify-content-end {
+        flex-direction: column;
+    }
+
+    .col-md-4, .col-md-7 {
+        width: 100%;
+    }
+
+    #carouselExampleIndicators {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-inner {
+        order: 1;
+    }
+
+    .carousel-indicators {
+        order: 2;
+    }
+
+    .add-btn {
+        display: flex;
+        flex-direction: row !important;
+        gap: 10px !important;
+        margin-top: 15px;
+        flex-grow: 1;
+    }
+
+    .add-btn .btn {
+        flex: 1;
+        padding: 15px 25px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .btns-quantity {
+        width: auto;
+    }
+
+    .btns-quantity .btn {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+
+    .btns {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+
+.review-title{
+
+    font-family: cairo;
+    font-size: 20px;
+    font-weight: bold;
 }
