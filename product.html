@@ -11,6 +11,11 @@
     <title>Product</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -197,7 +202,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-                <div class="price mb-3">
+                <div class="price2 mb-3">
                     <span>السعر 250 $</span>
                     <span>450$</span>
                 </div>
@@ -249,7 +254,7 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#reviows">مراجعات المنتج</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#Tablet">تابليت</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#cargo">الأسئلة الشائعة</a>
             </li>
         </ul>
 
@@ -260,7 +265,7 @@
 
 
         <div class="tab-content special-product">
-            <!-- New Products Tab -->
+            <!-- description Tab -->
             <div class="tab-pane fade show active mt-5" id="description">
                 <div class="row row-col-md-2 flex-column-reverse flex-md-row">
                     <div class="col product-description">
@@ -322,10 +327,10 @@
                 </div>
             </div>
 
-            <!-- Laptops Tab -->
+            <!-- reviows Tab -->
             <div class="tab-pane fade mt-5" id="reviows">
                 <div class="row  flex-column-reverse flex-md-row justify-content-between">
-                    <div class="col col-5">
+                    <div class="col col-md-5">
                         <h3 class="review-title">يسعدنا إبداء رأيكم بالمنتج</h3>
                         <form action="">
                             <div class="mb-3">
@@ -345,7 +350,7 @@
                     </div>
 
 
-                    <div class="col col-5">
+                    <!-- <div class="col col-5">
                         <h3 class="review-title">تقييمات العملاء الاكارم</h3>
                         <h3>4.5</h3>
                         <div class="stars mb-2 d-inline-flex">
@@ -355,9 +360,9 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="review-title" >6000 عميل اعطوا رايهم بالمنتج</p>
+                        <p class="review-title">6000 عميل اعطوا رايهم بالمنتج</p>
 
-                        <div>
+                        <div class="d-flex flex-column gap-2">
                             <div class="d-flex  align-items-center gap-3">
                                 <span>1426<i class="fa-solid fa-star"></i></span>
                                 <div class="progress flex-grow-1" role="progressbar"
@@ -415,9 +420,116 @@
                             </div>
 
                         </div>
+                    </div> -->
+
+                    <div class="col col-md-5 mb-4">
+                        <h3 class="review-title">تقييمات العملاء الأكارم</h3>
+                        <div class="rating-summary">
+                            <h3>4.5</h3>
+                            <div class="stars mb-2 d-inline-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="review-title">6000 عميل أعطوا رأيهم بالمنتج</p>
+                        </div>
+
+                        <div class="d-flex flex-column gap-2 rating-details">
+                            <div class="d-flex align-items-center gap-3">
+                                <span>5 <i class="fa-solid fa-star"></i></span>
+                                <div class="progress flex-grow-1" role="progressbar" aria-label="تقييم 5 نجوم"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-success" style="width: 100%"></div>
+                                </div>
+                                <span class="count">1426</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span>4 <i class="fa-solid fa-star"></i></span>
+                                <div class="progress flex-grow-1" role="progressbar" aria-label="تقييم 4 نجوم"
+                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-info" style="width: 40%"></div>
+                                </div>
+                                <span class="count">1947</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span>3 <i class="fa-solid fa-star"></i></span>
+                                <div class="progress flex-grow-1" role="progressbar" aria-label="تقييم 3 نجوم"
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 60%"></div>
+                                </div>
+                                <span class="count">2500</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span>2 <i class="fa-solid fa-star"></i></span>
+                                <div class="progress flex-grow-1" role="progressbar" aria-label="تقييم 2 نجوم"
+                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-orange" style="width: 20%"></div>
+                                </div>
+                                <span class="count">3045</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span>1 <i class="fa-solid fa-star"></i></span>
+                                <div class="progress flex-grow-1" role="progressbar" aria-label="تقييم 1 نجوم"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 50%"></div>
+                                </div>
+                                <span class="count">4785</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- cargo Tab -->
+            <div class="tab-pane fade mt-5" id="cargo">
+                <div class="row row-col-md-2 flex-column-reverse flex-md-row">
+                    <div class="col product-description">
+
+                        <div class="faq-section">
+                            <h1>الأسئلة الشائعة</h1>
+
+                            <div class="faq-image">
+                                <img src="images/ideas-and-questions.jpg.webp" alt="صورة الأسئلة الشائعة">
+                            </div>
+
+                            <div class="faq-item">
+                                <h3>كيف يمكنني إرجاع منتج؟</h3>
+                                <p>يمكنك إرجاع المنتج خلال 14 يومًا من تاريخ الشراء. يرجى التأكد من أن المنتج في حالته
+                                    الأصلية مع جميع الملحقات. قم بزيارة صفحة "إرجاع المنتجات" لمزيد من التفاصيل.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3>ما هي طرق الدفع المتاحة؟</h3>
+                                <p>نحن نقبل الدفع عبر البطاقات الائتمانية، PayPal، والدفع عند الاستلام. يمكنك اختيار
+                                    الطريقة التي تناسبك أثناء عملية الدفع.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3>كيف يمكنني تتبع طلبي؟</h3>
+                                <p>بعد تأكيد الطلب، ستتلقى بريدًا إلكترونيًا يحتوي على رقم التتبع. يمكنك استخدام هذا
+                                    الرقم لتتبع حالة شحنك على موقعنا أو عبر شركة الشحن.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3>هل يمكنني تغيير عنوان الشحن بعد تقديم الطلب؟</h3>
+                                <p>نعم، يمكنك تغيير عنوان الشحن قبل أن يتم شحن الطلب. يرجى الاتصال بفريق الدعم لدينا في
+                                    أسرع وقت ممكن لتعديل العنوان.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <h3>ما هي سياسة الضمان؟</h3>
+                                <p>جميع المنتجات لدينا مشمولة بضمان لمدة عام واحد. يغطي الضمان عيوب التصنيع. يرجى
+                                    الاحتفاظ بالإيصال كدليل على الشراء.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
 
@@ -426,15 +538,441 @@
 
 
 
-        <!-- Tablet Tab -->
-        <div class="tab-pane fade mt-5" id="Tablet">
-            <!-- <div class="row row-col-md-2 flex-column-reverse flex-md-row">
-                    <div class="col"></div>
-                    <div class="col"></div>
-                </div> -->
-        </div>
+
     </div>
     <!-- end special products -->
+
+
+
+
+
+
+    <!-- start  Related Products Section -->
+
+    <div class="related-products py-5">
+        <div class="container">
+            <!-- عنوان القسم -->
+            <div class="section-header text-center mb-5">
+                <h2 class="display-6 fw-bold mb-3">منتجات مشابهة</h2>
+                <div class="divider d-flex align-items-center justify-content-center mb-3">
+                    <span class="line bg-primary"></span>
+                    <i class="fas fa-mobile-alt mx-3 text-primary"></i>
+                    <span class="line bg-primary"></span>
+                </div>
+                <p class="text-muted">اكتشف المزيد من المنتجات المميزة التي قد تعجبك</p>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- المنتج 1 -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100 shadow-sm rounded-3 position-relative overflow-hidden">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">
+                                خصم 25%
+                            </span>
+                            <div class="product-image position-relative">
+                                <img src="images/products/mobile/Samsung Galaxy A54.jpg" class="card-img-top p-3"
+                                    alt="Samsung Galaxy S23 Ultra">
+                                <div class="product-overlay d-flex align-items-center justify-content-center">
+                                    <div class="d-flex gap-2">
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="إضافة للمفضلة">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="مشاركة">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="عرض سريع">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="mb-2">
+                                    <span class="badge bg-primary">جديد</span>
+                                    <span class="badge bg-secondary">متوفر</span>
+                                </div>
+                                <h5 class="card-title mb-2">Samsung Galaxy S23 Ultra</h5>
+                                <p class="card-text text-muted small mb-3">شاشة 6.8 بوصة، ذاكرة 256GB، كاميرا 108MP</p>
+                                <div class="ratings mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2 text-muted small">(4.5)</span>
+                                </div>
+                                <div class="product-price mb-3">
+                                    <span class="h5 text-primary fw-bold">1000$</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">1200$</small>
+                                </div>
+                                <button class="btn btn-outline-info w-100 mt-auto">
+                                    <i class="fas fa-shopping-cart me-2"></i>
+                                    أضف إلى السلة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 2 -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100 shadow-sm rounded-3 position-relative overflow-hidden">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">
+                                خصم 20%
+                            </span>
+                            <div class="product-image position-relative">
+                                <img src="images/products/mobile/Samsung Galaxy Z Fold.jpg" class="card-img-top p-3"
+                                    alt="iPhone 14 Pro Max">
+                                <div class="product-overlay d-flex align-items-center justify-content-center">
+                                    <div class="d-flex gap-2">
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="إضافة للمفضلة">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="مشاركة">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="عرض سريع">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">جديد</span>
+                                    <span class="badge bg-info">متوفر</span>
+                                </div>
+                                <h5 class="card-title mb-2">iPhone 14 Pro Max</h5>
+                                <p class="card-text text-muted small mb-3">شاشة 6.7 بوصة، ذاكرة 256GB، كاميرا 48MP</p>
+                                <div class="ratings mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2 text-muted small">(4.7)</span>
+                                </div>
+                                <div class="product-price mb-3">
+                                    <span class="h5 text-success fw-bold">1200$</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">1500$</small>
+                                </div>
+                                <button class="btn btn-outline-danger w-100 mt-auto">
+                                    <i class="fas fa-shopping-cart me-2"></i>
+                                    أضف إلى السلة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 3 -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100 shadow-sm rounded-3 position-relative overflow-hidden">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">
+                                خصم 20%
+                            </span>
+                            <div class="product-image position-relative">
+                                <img src="images/products/mobile/Samsung Galaxy S21 FE.jpg" class="card-img-top p-3"
+                                    alt="iPhone 14 Pro Max">
+                                <div class="product-overlay d-flex align-items-center justify-content-center">
+                                    <div class="d-flex gap-2">
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="إضافة للمفضلة">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="مشاركة">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="عرض سريع">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">جديد</span>
+                                    <span class="badge bg-info">متوفر</span>
+                                </div>
+                                <h5 class="card-title mb-2">iPhone 14 Pro Max</h5>
+                                <p class="card-text text-muted small mb-3">شاشة 6.7 بوصة، ذاكرة 256GB، كاميرا 48MP</p>
+                                <div class="ratings mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2 text-muted small">(4.7)</span>
+                                </div>
+                                <div class="product-price mb-3">
+                                    <span class="h5 text-success fw-bold">1200$</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">1500$</small>
+                                </div>
+                                <button class="btn btn-outline-warning w-100 mt-auto">
+                                    <i class="fas fa-shopping-cart me-2"></i>
+                                    أضف إلى السلة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 4 -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100 shadow-sm rounded-3 position-relative overflow-hidden">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">
+                                خصم 20%
+                            </span>
+                            <div class="product-image position-relative">
+                                <img src="images/products/mobile/Samsung Galaxy Note 20 Ultra.jpg"
+                                    class="card-img-top p-3" alt="iPhone 14 Pro Max">
+                                <div class="product-overlay d-flex align-items-center justify-content-center">
+                                    <div class="d-flex gap-2">
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="إضافة للمفضلة">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="مشاركة">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="عرض سريع">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">جديد</span>
+                                    <span class="badge bg-info">متوفر</span>
+                                </div>
+                                <h5 class="card-title mb-2">iPhone 14 Pro Max</h5>
+                                <p class="card-text text-muted small mb-3">شاشة 6.7 بوصة، ذاكرة 256GB، كاميرا 48MP</p>
+                                <div class="ratings mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2 text-muted small">(4.7)</span>
+                                </div>
+                                <div class="product-price mb-3">
+                                    <span class="h5 text-success fw-bold">1200$</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">1500$</small>
+                                </div>
+                                <button class="btn btn-outline-secondary w-100 mt-auto">
+                                    <i class="fas fa-shopping-cart me-2"></i>
+                                    أضف إلى السلة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 5 -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100 shadow-sm rounded-3 position-relative overflow-hidden">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">
+                                خصم 20%
+                            </span>
+                            <div class="product-image position-relative">
+                                <img src="images/products/mobile/Samsung Galaxy S21 FE.jpg" class="card-img-top p-3"
+                                    alt="iPhone 14 Pro Max">
+                                <div class="product-overlay d-flex align-items-center justify-content-center">
+                                    <div class="d-flex gap-2">
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="إضافة للمفضلة">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="مشاركة">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="عرض سريع">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">جديد</span>
+                                    <span class="badge bg-info">متوفر</span>
+                                </div>
+                                <h5 class="card-title mb-2">iPhone 14 Pro Max</h5>
+                                <p class="card-text text-muted small mb-3">شاشة 6.7 بوصة، ذاكرة 256GB، كاميرا 48MP</p>
+                                <div class="ratings mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2 text-muted small">(4.7)</span>
+                                </div>
+                                <div class="product-price mb-3">
+                                    <span class="h5 text-success fw-bold">1200$</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">1500$</small>
+                                </div>
+                                <button class="btn btn-outline-success w-100 mt-auto">
+                                    <i class="fas fa-shopping-cart me-2"></i>
+                                    أضف إلى السلة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 6 -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100 shadow-sm rounded-3 position-relative overflow-hidden">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">
+                                خصم 20%
+                            </span>
+                            <div class="product-image position-relative">
+                                <img src="images/products/mobile/Samsung Galaxy Note 20 Ultra.jpg"
+                                    class="card-img-top p-3" alt="iPhone 14 Pro Max">
+                                <div class="product-overlay d-flex align-items-center justify-content-center">
+                                    <div class="d-flex gap-2">
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="إضافة للمفضلة">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="مشاركة">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="عرض سريع">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">جديد</span>
+                                    <span class="badge bg-info">متوفر</span>
+                                </div>
+                                <h5 class="card-title mb-2">iPhone 14 Pro Max</h5>
+                                <p class="card-text text-muted small mb-3">شاشة 6.7 بوصة، ذاكرة 256GB، كاميرا 48MP</p>
+                                <div class="ratings mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2 text-muted small">(4.7)</span>
+                                </div>
+                                <div class="product-price mb-3">
+                                    <span class="h5 text-success fw-bold">1200$</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">1500$</small>
+                                </div>
+                                <button class="btn btn-outline-success w-100 mt-auto">
+                                    <i class="fas fa-shopping-cart me-2"></i>
+                                    أضف إلى السلة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 7 -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100 shadow-sm rounded-3 position-relative overflow-hidden">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 py-2 px-3 rounded-pill">
+                                خصم 20%
+                            </span>
+                            <div class="product-image position-relative">
+                                <img src="images/products/mobile/Samsung Galaxy S21 FE.jpg" class="card-img-top p-3"
+                                    alt="iPhone 14 Pro Max">
+                                <div class="product-overlay d-flex align-items-center justify-content-center">
+                                    <div class="d-flex gap-2">
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="إضافة للمفضلة">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="مشاركة">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                        <button class="btn btn-light rounded-circle p-2" data-bs-toggle="tooltip"
+                                            title="عرض سريع">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="mb-2">
+                                    <span class="badge bg-success">جديد</span>
+                                    <span class="badge bg-info">متوفر</span>
+                                </div>
+                                <h5 class="card-title mb-2">iPhone 14 Pro Max</h5>
+                                <p class="card-text text-muted small mb-3">شاشة 6.7 بوصة، ذاكرة 256GB، كاميرا 48MP</p>
+                                <div class="ratings mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2 text-muted small">(4.7)</span>
+                                </div>
+                                <div class="product-price mb-3">
+                                    <span class="h5 text-success fw-bold">1200$</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">1500$</small>
+                                </div>
+                                <button class="btn btn-outline-success w-100 mt-auto">
+                                    <i class="fas fa-shopping-cart me-2"></i>
+                                    أضف إلى السلة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- كرر باقي المنتجات هنا -->
+                </div>
+
+                <!-- أزرار التنقل -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- تهيئة Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1, // عرض منتج واحد في الموبايل
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2, // عرض منتجين في الشاشات الصغيرة
+                },
+                1024: {
+                    slidesPerView: 4, // عرض 4 منتجات في اللابتوب
+                },
+            },
+        });
+    </script>
+
+    <!-- end Related Products Section -->
+
+
+
+
+
+
 
 
 
@@ -514,7 +1052,8 @@
 
 
                 <div class="col d-flex justify-content-center">
-                    <p class="copy text-white text-center">جميع الحقوق محفوظة &copy; 2025 لصالح شركة ياسر للبرمجيات
+                    <p class="copy text-white text-center">جميع الحقوق محفوظة &copy; 2025 لصالح شركة ياسر
+                        للبرمجيات
                         -
                         فرع النمسا</p>
                 </div>
