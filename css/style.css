@@ -59,8 +59,15 @@ a {
 
 
 
+/* تطبيق الهوامش المخصصة على الشاشات المتوسطة والكبيرة */
+@media (min-width: 768px) {
+    .custom-margin {
+        margin-right: 140px;
+    }
+}
+ 
 
-                                /* تنسيق روابط القائمة الرئيسية */
+/* تنسيق روابط القائمة الرئيسية */
 .nav-link {
     font-weight: 600 !important;
 }
@@ -1178,4 +1185,35 @@ font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* صفحة التصنيفات */
+
+.banner{
+    background-color: black;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border-bottom: 2px solid var(--mainColor);
+}
+.category-name{
+color: white;
+font-family: cairo;
+font-weight: bold;
+font-size: 35px;
+text-align: center;
+}
+.filter-section{
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-title{
+  
+    font-family: cairo;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
 }
