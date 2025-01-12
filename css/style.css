@@ -1241,3 +1241,275 @@ border-radius: 10px;
     border-bottom: 1px dashed #dbdbdbda;
     margin-bottom: 15px;
 }
+
+/* من هنا تبدء اعدادت صفحة الدفع تبع دروس الاستاذ ياسين --  */
+/* 
+.check-banner {
+    background-image: url('../images/checkout-banner.png');
+    height: 400px;
+    align-items: center; 
+    justify-content: flex-start; 
+    
+ 
+}
+
+.category-name2 {
+    color: white;
+    font-weight: bold;
+    font-family: cairo;
+    font-size: 32px;
+    padding-right: 550px ; 
+}
+
+@media (max-width: 768px) {
+    .check-banner {
+        justify-content: flex-end; 
+    }
+
+    .category-name2 {
+    
+
+        padding-left: 110px !important; 
+        text-align: left; 
+        line-height: 50px;
+    }
+}
+
+.user-info{
+background-color: #eeeeee5c;
+padding: 15px;
+ border-radius: 10px;   
+}
+
+.totlal-price{
+font-size: 20px;
+font-weight: bold;
+color: red;
+}
+.master-card{
+background-color: #eee;
+padding: 10px;
+border-radius: 10PX;
+margin-top: 30PX;
+
+}
+.master-card img{
+width: 25%;
+   top: 57%;
+   left: 10px; 
+} */
+
+/* الى هنا تنتهي اعدادت صفحة الدفع تبع دروس الاستاذ ياسين --  */
+
+
+/* ------------- checkout deep*/
+
+.check-banner {
+    background-image: url('../images/checkout-banner.png');
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.check-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.category-name2 {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.user-info {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h4 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%; /* حقل الهاتف ممتد على طول الصف */
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.totlal-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.master-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.master-card h4 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+}
+
+.mini-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.mini-card img {
+    border-radius: 10px;
+}
+
+.payments {
+    margin-top: 20px;
+}
+
+.payments input[type="radio"] {
+    margin-left: 10px;
+}
+
+.payments label {
+    font-weight: normal;
+    color: #555;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.payment-method img {
+    width: 40px;
+    height: 25px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    /* عند عرض الشاشة أقل من أو يساوي 768 بكسل (أجهزة محمولة) */
+    .check-banner {
+        height: 200px; /* تقليل ارتفاع البانر ليتناسب مع الشاشات الصغيرة */
+    }
+
+    .category-name2 {
+        font-size: 28px; /* تصغير حجم الخط للعنوان الرئيسي */
+    }
+
+    .user-info, .master-card {
+        padding: 15px; /* تقليل الحشو الداخلي لعناصر معلومات المستخدم وماستر كارد */
+    }
+}
+
+.master-card img {
+    width: 25%; /* تحديد عرض الصورة داخل ماستر كارد بنسبة 25% من عرض العنصر الأب */
+    top: 57%; /* تحديد المسافة من الأعلى بالنسبة للعنصر الأب */
+    left: 10px; /* تحديد المسافة من اليسار بالنسبة للعنصر الأب */
+}
+
+.iti {
+    width: 100% !important; /* جعل حقل الهاتف يأخذ العرض الكامل للعنصر الأب */
+}
+
+.iti__country-list {
+    position: absolute !important; /* جعل قائمة الدول تظهر بشكل مطلق (غير ثابت) */
+    right: -400px; /* إزاحة قائمة الدول إلى اليمين بمقدار 400 بكسل */
+}
+
+
+                                           /* تععليمات اضافية */
+    @media (max-width: 768px) {
+        .mini-card, .master-card, .payments {
+            width: 97%; /* جعل العناصر تأخذ العرض الكامل للشاشة */
+            margin: 10px 0; /* إضافة هوامش بين العناصر */
+        }
+        .payment-method img {
+            margin-bottom: 10px; /* إضافة مسافة بين الأيقونة والنص */
+        }
+    
+        .form-control {
+            font-size: 14px; /* تصغير حجم الخط للحقول */
+        }
+    
+        .totlal-price {
+            font-size: 18px; /* تصغير حجم خط الإجمالي */
+        }
+    }
+
+    
+/* نهاية قسم صفحة اتمام الدفع */
+
+
+
+
+
+/* end of deep style checkout */
