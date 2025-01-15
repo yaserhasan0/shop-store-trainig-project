@@ -11,6 +11,12 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -18,43 +24,26 @@
     <!-- قسم الهيدر -->
     <!-- start header-->
     <header>
-        <div class="top-header  d-flex align-items-center py-2">
-
+        <div class="top-header d-flex align-items-center py-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-2 mt-2 col-md-4">
+                    <div class="col-6 col-md-4 mt-2">
                         <a href="">
                             <img width="150px" src="images/logo.png" alt="logo">
                         </a>
                     </div>
-
-
-
-
-
-                    <!-- مربع البحث -->
-
-
-                    <div class="col-6 col-md-2 mt-2 col-md-4 ">
+                    <div class="col-6 col-md-4 mt-2">
                         <input type="text" class="form-control" placeholder="عن ماذا تبحث ؟">
                     </div>
-
-
-
-
-
-
-                    <!-- أزرار سطح المكتب -->
-
-
                     <div class="col-md-4 left-header d-flex align-items-center d-none d-lg-flex justify-content-end">
-                        <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample">
+                        <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="cart">
                             <span>السلة</span>
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
-                        <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
-                            <span>تسحيل الدخول</span>
-                            <i class="fa-solid fa-user-plus"></i> </a>
+                        <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="login">
+                            <span>تسجيل الدخول</span>
+                            <i class="fa-solid fa-user-plus"></i>
+                        </a>
                         <a href="">
                             <span>المفضلة</span>
                             <i class="fa-solid fa-heart"></i>
@@ -64,82 +53,52 @@
             </div>
         </div>
 
-
-        <!-- الجزء الثاني السفلي من الهيدار -->
-
-
         <div class="buttom-header">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-
-
                     <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-
-
-
-                    <!-- أزرار (  سلة المشتريات - تسجيل الدخول) لشاشة الموبايل -->
-
-
                     <div>
-                        <div>
-                            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#cart" aria-controls="cart">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#login" aria-controls="login">
-                                <i class="fa-solid fa-user-plus"></i>
-                            </button>
-                        </div>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#cart" aria-controls="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#login" aria-controls="login">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </button>
                     </div>
-
-
-
-                    <!-- عناصر القائمة الرئيسية -->
-
 
                     <div class="collapse navbar-collapse custom-margin me-md-5 me-lg-5" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                           
-
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">اجهزة كومبيوتر</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    المتجر
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="product.html">صفحة المنتج</a></li>
+                                    <li><a class="dropdown-item" href="cart.html">صفحة السلة</a></li>
+                                    <li><a class="dropdown-item" href="checkout.html">صفحة الدفع</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product.html">موبايل</a>
+                                <a class="nav-link" href="about.html">من نحن</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">الأجهزة اللوحية</a>
+                                <a class="nav-link" href="contact.html">تواصل معنا</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">طابعات و سكنر</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">اكسسوارات وشواحن</a>
-                            </li>
-                        </ul>
                         </ul>
                     </div>
-                    <!-- نهاية عناصر القائمة الرئيسية  -->
-
-
-
                 </div>
             </nav>
         </div>
-
-
-
-
     </header>
     <!-- end header-->
 
@@ -636,18 +595,19 @@
     <section class="new-product">
         <div class="container-fluid">
             <h2 class="text-center section-title">أحدث المنتجات</h2>
-    
+
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-    
+
                     <!-- Product 1 -->
                     <div class="col product mb-4 divices swiper-slide">
                         <div class="card overflow-hidden">
                             <div class="quick-icons">
-                                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#quick-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
                             </div>
@@ -670,12 +630,13 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Product 2 -->
                     <div class="col product mb-4 divices swiper-slide">
                         <div class="card overflow-hidden">
                             <div class="quick-icons">
-                                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#quick-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
                             </div>
@@ -698,12 +659,13 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Product 3 -->
                     <div class="col product mb-4 divices swiper-slide">
                         <div class="card overflow-hidden">
                             <div class="quick-icons">
-                                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#quick-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
                             </div>
@@ -726,12 +688,13 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Product 4 -->
                     <div class="col product mb-4 divices swiper-slide">
                         <div class="card overflow-hidden">
                             <div class="quick-icons">
-                                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#quick-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
                             </div>
@@ -754,12 +717,13 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Product 5 -->
                     <div class="col product mb-4 divices swiper-slide">
                         <div class="card overflow-hidden">
                             <div class="quick-icons">
-                                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#quick-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
                             </div>
@@ -782,12 +746,13 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Product 6 -->
                     <div class="col product mb-4 divices swiper-slide">
                         <div class="card overflow-hidden">
                             <div class="quick-icons">
-                                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#quick-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
                             </div>
@@ -810,12 +775,13 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Product 7 -->
                     <div class="col product mb-4 divices swiper-slide">
                         <div class="card overflow-hidden">
                             <div class="quick-icons">
-                                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#quick-product" data-bs-toggle="modal"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
                             </div>
@@ -838,15 +804,15 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
                 <!-- If we need pagination -->
                 <!-- <div class="swiper-pagination"></div> -->
-    
+
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-    
+
                 <!-- If we need scrollbar -->
                 <!-- <div class="swiper-scrollbar"></div> -->
             </div>

@@ -1482,7 +1482,7 @@ footer a:hover {
 
 .iti__country-list {
     position: absolute !important; /* جعل قائمة الدول تظهر بشكل مطلق (غير ثابت) */
-    right: -400px; /* إزاحة قائمة الدول إلى اليمين بمقدار 400 بكسل */
+    left: 0px; /* إزاحة قائمة الدول إلى اليمين بمقدار 400 بكسل */
 }
 
 
@@ -1513,3 +1513,204 @@ footer a:hover {
 
 
 /* end of deep style checkout */
+
+
+:root {
+    --mcdonalds-red: #DA291C;
+    --mcdonalds-yellow: #FFC72C;
+}
+
+/* تنسيق الهيدر العلوي */
+.top-header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-header a {
+    color: var(--mcdonalds-red);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.top-header .left-header a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.top-header .left-header i {
+    font-size: 1.2rem;
+}
+
+/* تنسيق مربع البحث */
+.form-control {
+    border: 2px solid var(--mcdonalds-yellow);
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--mcdonalds-red);
+    box-shadow: 0 0 0 0.2rem rgba(218, 41, 28, 0.25);
+}
+
+/* تنسيق القائمة الرئيسية */
+.navbar {
+    background-color: white !important;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.nav-link {
+    color: var(--mcdonalds-red) !important;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    position: relative;
+    transition: color 0.3s ease;
+    margin: 0 0.3rem;
+}
+
+.nav-link span {
+    position: relative;
+    z-index: 1;
+}
+
+/* تأثيرات الحركة للروابط */
+.nav-link::before,
+.nav-link::after,
+.nav-link > span::before,
+.nav-link > span::after {
+    content: '';
+    position: absolute;
+    background: var(--mcdonalds-yellow);
+    transition: transform 0.4s ease;
+    border-radius: 2px;
+}
+
+/* الخطوط الأفقية */
+/* .nav-link::before,
+.nav-link::after {
+    width: calc(100% - 2px);
+    height: 2.5px;
+    left: 1px;
+} */
+
+/* الخطوط العمودية */
+/* .nav-link > span::before,
+.nav-link > span::after {
+    width: 2.5px;
+    height: calc(100% - 2px);
+    top: 1px;
+} */
+
+.nav-link::before { top: 0; transform: scaleX(0); transform-origin: right; }
+.nav-link::after { bottom: 0; transform: scaleX(0); transform-origin: left; }
+/* .nav-link > span::before { left: 0; transform: scaleY(0); transform-origin: top; }
+.nav-link > span::after { right: 0; transform: scaleY(0); transform-origin: bottom; } */
+
+/* .nav-link:hover::before { transform: scaleX(1); transform-origin: left; }
+.nav-link:hover::after { transform: scaleX(1); transform-origin: right; } */
+/* .nav-link:hover > span::before { transform: scaleY(1); transform-origin: bottom; }
+.nav-link:hover > span::after { transform: scaleY(1); transform-origin: top; } */
+
+/* تنسيق القائمة المنسدلة */
+.dropdown-menu {
+    background: linear-gradient(145deg, #ffffff 0%, var(--mcdonalds-yellow) 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-width: 200px;
+    display: none; /* مخفي افتراضيًا */
+    position: absolute;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* يظهر عند التمرير */
+}
+
+.dropdown-item {
+    color: var(--mcdonalds-red);
+    padding: 0.7rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown-item:hover {
+    background: rgba(218, 41, 28, 0.1);
+    color: var(--mcdonalds-red);
+}
+
+.dropdown-item::before,
+.dropdown-item::after {
+    content: '';
+    position: absolute;
+    background: var(--mcdonalds-red);
+    transition: transform 0.3s ease;
+}
+
+/* .dropdown-item::before {
+    height: 2px;
+    width: 100%;
+    top: 0;
+    transform: translateX(-100%);
+}
+
+.dropdown-item::after {
+    width: 2px;
+    height: 100%;
+    right: 0;
+    transform: translateY(100%);
+} */
+
+.dropdown-item:hover::before {
+    transform: translateX(0);
+}
+
+.dropdown-item:hover::after {
+    transform: translateY(0);
+}
+
+
+
+/* تنسيق القائمة الرئيسية */
+.nav-link {
+    color: var(--mcdonalds-red) !important;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease; /* إضافة transition لـ transform */
+    margin: 0 0.3rem;
+}
+
+/* تأثير التكبير عند التمرير */
+.nav-link:hover {
+    transform: scale(1.05); /* تكبير النص بنسبة 10% */
+    transition:  0.8s;
+}
+
+/* تنسيق القائمة المنسدلة */
+.dropdown-item {
+    color: var(--mcdonalds-red);
+    padding: 0.7rem 1rem;
+    transition: all 0.3s ease, transform 0.3s ease; /* إضافة transition لـ transform */
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* تأثير التكبير عند التمرير */
+.dropdown-item:hover {
+    background: rgba(218, 41, 28, 0.1);
+    color: var(--mcdonalds-red);
+    transform: scale(1.05); /* تكبير النص بنسبة 10% */
+}
