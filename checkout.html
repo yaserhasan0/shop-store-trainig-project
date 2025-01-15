@@ -17,25 +17,26 @@
 </head>
 
 <body>
-    <!-- الهيدر -->
+    <!-- قسم الهيدر -->
+    <!-- start header-->
     <header>
         <div class="top-header d-flex align-items-center py-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-2 mt-2 col-md-4">
+                    <div class="col-6 col-md-4 mt-2">
                         <a href="">
                             <img width="150px" src="images/logo.png" alt="logo">
                         </a>
                     </div>
-                    <div class="col-6 col-md-2 mt-2 col-md-4">
+                    <div class="col-6 col-md-4 mt-2">
                         <input type="text" class="form-control" placeholder="عن ماذا تبحث ؟">
                     </div>
                     <div class="col-md-4 left-header d-flex align-items-center d-none d-lg-flex justify-content-end">
-                        <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample">
+                        <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="cart">
                             <span>السلة</span>
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
-                        <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+                        <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="login">
                             <span>تسجيل الدخول</span>
                             <i class="fa-solid fa-user-plus"></i>
                         </a>
@@ -47,6 +48,7 @@
                 </div>
             </div>
         </div>
+
         <div class="buttom-header">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
@@ -55,37 +57,51 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div>
-                        <div>
-                            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#cart" aria-controls="cart">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#login" aria-controls="login">
-                                <i class="fa-solid fa-user-plus"></i>
-                            </button>
-                        </div>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#cart" aria-controls="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#login" aria-controls="login">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </button>
                     </div>
+
                     <div class="collapse navbar-collapse custom-margin me-md-5 me-lg-5" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">أجهزة كومبيوتر</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    أقسام المتجر
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">أجهزة الموبايل</a></li>
+                                    <li><a class="dropdown-item" href="#">أجهزة الكومبيوتر</a></li>
+                                    <li><a class="dropdown-item" href="#">الأجهزة اللوحية</a></li>
+                                    <li><a class="dropdown-item" href="#">كاميرات</a></li>
+                                    <li><a class="dropdown-item" href="#">طابعات وسكانر</a></li>
+                                    <li><a class="dropdown-item" href="#">اكسسوارات</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    مؤقت
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="product.html">صفحة المنتج</a></li>
+                                    <li><a class="dropdown-item" href="cart.html">صفحة السلة</a></li>
+                                    <li><a class="dropdown-item" href="checkout.html">صفحة الدفع</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product.html">موبايل</a>
+                                <a class="nav-link" href="about.html">من نحن</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">الأجهزة اللوحية</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">طابعات وسكنر</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">اكسسوارات وشواحن</a>
+                                <a class="nav-link" href="contact.html">تواصل معنا</a>
                             </li>
                         </ul>
                     </div>
@@ -93,6 +109,7 @@
             </nav>
         </div>
     </header>
+    <!-- end header-->
 
     <!-- البانر -->
     <section class="check-banner d-flex">
@@ -245,35 +262,44 @@
     </section>
 
     <!-- الفوتر -->
-    <footer>
+     <!-- start footer -->
+     <footer>
         <div class="container">
             <div class="row row-cols-1 row-col-md-2 row-cols-lg-4">
                 <div class="col f1">
+
                     <img class="w-75" src="images/footer-logo1.png" alt="">
-                    <p class="dis">هذا المتجر اليوم هو أول متجر يقدم الخدمات أون لاين في منطقة الشرق الأوسط</p>
+                    <p class="dis">متجرك الموثوق للإلكترونيات في فيينا . نقدم أحدث التقنيات بأسعار تنافسية ضمن الأتحاد الأؤروبي
+                    </p>
                     <ul class="navbar-nav dis">
-                        <li><a href="https://maps.google.com"><i class="fa-solid fa-location-dot"></i>تركيا-اسطنبول</a></li>
+                        <li><a href="https://maps.google.com"><i class="fa-solid fa-location-dot"></i>تركيا-اسطنبول</a>
+                        </li>
                         <li><a href="tel:+905525100555"><i class="fa-solid fa-phone"></i>00905525100555</a></li>
-                        <li><a href="mailto:eng.yaserhasan@gmail.com"><i class="fa-solid fa-envelope"></i>eng.yaserhasan@gmail.com</a></li>
+                        <li><a href="mailto:eng.yaserhasan@gmail.com"><i
+                                    class="fa-solid fa-envelope"></i>eng.yaserhasan@gmail.com</a></li>
                     </ul>
                 </div>
+
+
                 <div class="col f2">
-                    <h3>اهم الروابط</h3>
+                    <h3>روابط مهمة</h3>
                     <ul class="navbar-nav">
-                        <li><a href="">الرئيسية</a></li>
-                        <li><a href="">المتجر</a></li>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="">من نحن</a></li>
                         <li><a href="">اتصل بنا</a></li>
+                        <li><a href="">فروع متجرنا</a></li>
                     </ul>
                 </div>
                 <div class="col f3">
-                    <h3>التصنيفات</h3>
+                    <h3>روابط سريعة</h3>
                     <ul class="navbar-nav">
-                        <li><a href="">أجهزة موبايل</a></li>
-                        <li><a href="">الحواسيب</a></li>
-                        <li><a href="">التابليت</a></li>
-                        <li><a href="">كاميرات</a></li>
+                        <li><a href="">سياسة الخصوصية</a></li>
+                        <li><a href="">الشروط والأحكام</a></li>
+                        <li><a href="">إرجاع المنتجات</a></li>
+                        <li><a href="">الأسئلة الشائعة</a></li>
                     </ul>
                 </div>
+
                 <div class="col f4">
                     <h3>النشرة البريدية</h3>
                     <p>اشترك معنا ليصلك كل جديد في النشرة البريدية</p>
@@ -283,16 +309,23 @@
                     </form>
                 </div>
             </div>
-            <div class="row row-cols-1 row-col-md-2">
-                <div class="col d-flex justify-content-center">
+
+
+            <div class="row row-cols-1 row-col-md-2 ">
+                <div class="col d-flex justify-content-center ">
                     <img src="images/pay.png" alt="">
                 </div>
+
+
+
                 <div class="col d-flex justify-content-center">
-                    <p class="copy text-white text-center">جميع الحقوق محفوظة &copy; 2025 لصالح شركة ياسر للبرمجيات - فرع النمسا</p>
+                    <p class="copy text-white text-center">جميع الحقوق محفوظة &copy; 2025 لصالح شركة ياسر للبرمجيات -
+                        فرع النمسا</p>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- end footer -->
 
 
 
